@@ -1,0 +1,38 @@
+.series {
+float:left;
+width: 33.33%;
+
+}
+.turno {
+float:left;
+width: 33.33%;
+}
+
+.atividade {
+float:right;
+width: 33.33%;
+}
+
+.nomealuno{
+    margin-left: -95px;
+}
+
+.nascimento{
+    margin-left: -150px;
+}
+
+.nomedamae{
+    margin-left: 32px;
+}
+
+.nomedopai{
+    margin-left: 25px;
+}
+
+.telefone{
+    margin-left: -145px;
+}
+
+.email{
+    margin-left: -155px;
+}

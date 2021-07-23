@@ -1,0 +1,83 @@
+<!DOCTYPE html!>
+<html lang = "pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário Escolar</title>
+        <link rel=stylesheet type="text/css" href="css/estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <center>
+            <H1>Formulário - Matricula Escolar</H1>
+            </center>
+            <img src="imagens/banner.jpg" alt="logo" height="130" width="1330">
+            <form name="formulario" id="form_cadastro" action="salvar.jsp" method="post">
+     <fieldset>
+                 
+  	<h3>Dados Pessoais:</h3>
+  	 <center>
+         <p><label class="nomealuno">Nome do Aluno: </label>
+  		<input type="text" required name="name" size="20" maxlength="40" id="fname" placeholder="Renan Pereira"><br>
+  	</p>		
+  	<p><label class="nascimento">Nascimento: </label>
+  		<input type="date" name="data_nascimento"/>
+  	</p>
+  	<p><label class="nomedamae">Nome da Mãe: </label>
+  		<input type="text" name="nomemae" size="40" maxlength="150" placeholder="Digite o nome da mãe"/><br>
+  	</p>
+  	<p><label class="nomedopai">Nome do Pai: </label>
+  		<input type="text" name="nomepai" size="40" maxlength="150" placeholder="Digite o nome do pai"/><br>
+  	</p>
+  	<p><label class="telefone">Telefone: </label>
+        <input type="tel" name="telefone" size="20" maxlength="11"/>
+     </p>
+  	<p><label class="email">Email: </label>
+  		<input type="email" required name="email" size="20" maxlength="40" id="email" placeholder="@.com" ><br>
+  	</p>
+        </center>
+  </fieldset>
+  <fieldset>
+  	<h3>Informações de Matrícula:</h3>
+  	<div class="principal">
+  		<div class="series">
+  		<p> Série: <br />
+  			<select name="serie">
+  				  <option value="valor1">pré-escolar</option>
+  				  <option value="valor2">1a série 1o grau</option>
+  				  <option value="valor3">2a série 1o grau</option>
+  				  <option value="valor4">3a série 1o grau</option>
+  				  <option value="valor5">4a série 1o grau</option>
+  				  <option value="valor6">5a série 1o grau</option>
+  				  <option value="valor7">6a série 1o grau</option>
+  				  <option value="valor8">7a série 1o grau</option>
+  				  <option value="valor9">8a série 1o grau</option>
+  				  <option value="valor10">1a série 2o grau</option>
+  				  <option value="valor11">2a série 2o grau</option>
+  				  <option value="valor12">3a série 2o grau</option>
+  			</select>
+  		</p>
+  		</div>
+  		<div class="turno">
+  		<p> Turno:<br />
+  			<input type="radio" name="turno" value="manhã">Manhã<br>
+  			<input type="radio" name="turno" value="tarde">Tarde<br>
+  		</p>
+  		</div>
+  		<div class="atividade">
+  			<p>Atividades Extracurriculares:<br />
+  				<input type="checkbox" name="inf">Informática<br>
+  				<input type="checkbox" name="mus" >Música<br>
+  				<input type="checkbox" name="bal" >Balet<br>
+  				<input type="checkbox" name="pin" >Pintura<br>
+  				<input type="checkbox" name="jud" >Judô<br>
+  				<input type="checkbox" name="fut" >Futebol<br>
+  			</p>
+  		</div>
+  	</div>
+  </fieldset>
+                
+            </form>
+        </main>
+    </body>
+</html>

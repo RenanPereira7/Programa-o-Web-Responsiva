@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+            Clique neste texto e mantenha o clique pressionado. Repare que o texto mudará da cor Preto para o VERMELHO.
+            Ao soltar o clique, o texto ficara VERDE.
+        </p>
+        <script>
+            function mouseDown(){
+                document.getElementById("myP").style.color "red";
+            }
+            function mouseUp() {
+                document.getElementById("myP").style.color "green";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html!>
+<html lang = "pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Unip - Formulário</title>
+        <link rel=stylesheet type="text/css" href="css/estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <H1>Formulário </H1>
+            <form name="formulario" id="form_cadastro" action="salvar.jsp" method="post">
+                 <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label>Endereço</label>
+                <input type="text" name="endereco" value="Digite o endereço" size="40" maxlength="150"/>
+                <label>Data de Nascimento</label>
+                <input type="date" name="data_nascimento"/>
+                <label>Senha</label>
+                <input type="password" name="senha"/>
+                <label>Data/Hora de entrada</label>
+                <input type="datetime-local" name="datahora_entrada"/>
+                <br>
+                <label>Selecione uma opção</label>
+                <input type="radio" id="alt1" name="alternativa" value="A"/> <label for="alt1">Alternativa A</label>
+                <input type="radio" id="alt2" name="alternativa" value="B"/> <label for="alt2">Alternativa B</label>
+                <input type="radio" id="alt3" name="alternativa" value="C"/> <label for="alt3">Alternativa C</label>
+                <input type="radio" id="alt4" name="alternativa" value="D"/> <label for="alt4">Alternativa D</label>
+                <br>
+                <label> Selecione uma ou várias opções</label>
+                <input type="checkbox" id="selec1" name="alternativa" value="A"/> <label for="select1">Alt A</label>
+                <input type="checkbox" id="selec2" name="alternativa" value="B"/> <label for="select2">Alt B</label>
+                <input type="checkbox" id="selec3" name="alternativa" value="C"/> <label for="select3">Alt C</label>
+                <input type="checkbox" id="selec4" name="alternativa" value="D"/> <label for="select4">Alt D</label>
+                <input type="checkbox" id="selec5" name="alternativa" value="E"/> <label for="select5">Alt E</label>
+                <br>
+                <label>Telefone</label>
+                <input type="tel" name="telefone" size="20" maxlength="11"/>
+                <label>E-mail</label>
+                <input type="email" name="email" size="50" maxlength="80"/>
+                <label>Pesquisa</label>
+                <input type="search" name="busca" size="50" maxlength="120"/>
+                <label>Site</label>
+                <input type="url" name="site" size="50" maxlength="100"/>
+                <label>Estado</label>
+                <select name="estado" id="estado">
+                    <option value="SP">São Paulo</option>
+                    <option value="PR">Paraná</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="GO">Goiás</option>
+                </select>
+                <br>
+                <labe>Digite Sua Mensagem</labe>
+                <textarea name="msg" id="msg" rows="10" cols="50"></textarea>
+                <br>
+                <input type="submit" name="enviar" value="Salvar"/>
+                <input type="button" name="chamar" value="OK" onclick="alert('uhuuulll')" />
+                </fieldset>
+                
+            </form>
+        </main>
+    </body>
+</html>
